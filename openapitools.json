@@ -1,0 +1,28 @@
+{
+  "$schema": "./node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "7.9.0",
+    "generators": {
+      "angular-client": {
+        "generatorName": "typescript-angular",
+        "output": "#{cwd}/generated-angular-client",
+        "glob": "./swagger.json",
+        "typeMappings": {
+          "DateTime": "Date"
+        },
+        "additionalProperties": {
+          "ngVersion": "17.3.5",
+          "npmName": "example",
+          "supportsES6": "true",
+          "snapshot": false,
+          "npmVersion": "1.0.0",
+          "typescriptThreePlus": true,
+          "taggedUnions": true,
+          "stringEnums": true,
+          "legacyDiscriminatorBehavior": true
+        }
+      }
+    }
+  }
+}
